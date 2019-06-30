@@ -37,7 +37,7 @@
         <boot.admin.version>1.5.7</boot.admin.version>
 
         <skipTests>true</skipTests>
-        <docker.image.prefix>yaohui</docker.image.prefix>
+        <docker.image.prefix>hurner</docker.image.prefix>
         <lombok.version>1.16.18</lombok.version>
         <td-jdbc-version>13.10.0.1</td-jdbc-version>
         <druid-version>1.0.29</druid-version>

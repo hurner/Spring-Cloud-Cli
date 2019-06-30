@@ -1,3 +1,8 @@
+20190701
+1. 使用 mvn clean package docker:build -DpushImage 可成功打包，制作镜像，但上传不成功。
+	试验后是可以在命令行使用docker push hurner/hoorayos成功上传的，初步判断是哪里验证出问题了。
+
+
 SpringCloud 脚手架
 ===
 
