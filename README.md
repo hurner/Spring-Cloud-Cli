@@ -1,6 +1,15 @@
 20190701
 1. 使用 mvn clean package docker:build -DpushImage 可成功打包，制作镜像，但上传不成功。
 	试验后是可以在命令行使用docker push hurner/hoorayos成功上传的，初步判断是哪里验证出问题了。
+服务间调用：
+1. 		@FeignClient(name = "cloud-shiro",fallback = LoginFeignError.class),注意fallback
+2. 登录服务直接嵌入在zuul中，包括login, getinfo, getuserpermission, updatePermission,直接本地使用，不调用feign.
+	admin中则是具体的用户，角色，权限管理。
+
+config组件的使用：
+1. config中配置了本地config文件的路径。
+2. admin与service-tag配置文件中使用了config，但实际没有使用配置中心的任何值。
+
 
 
 SpringCloud 脚手架
